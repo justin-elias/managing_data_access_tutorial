@@ -122,15 +122,15 @@ DROP TABLE IF EXISTS ItemsPurchased;
 
 CREATE TABLE ItemsPurchased(itemID integer, itemName text, transactionID integer, price integer);
 
-INSERT INTO ItemsPurchased VALUES(777141, ‘rum’, 1010773, 27);
-INSERT INTO ItemsPurchased VALUES(777294, ‘eggs’, 1010773, 2);
-INSERT INTO ItemsPurchased VALUES(777184, ‘watermelon’, 1010773, 6);
-INSERT INTO ItemsPurchased VALUES(777141, ‘rum’, 1010434, 27);
-INSERT INTO ItemsPurchased VALUES(777839, ‘lime’, 1010434, 2);
-INSERT INTO ItemsPurchased VALUES(777111, ‘gingerale’, 1010434, 8);
-INSERT INTO ItemsPurchased VALUES(777269, ‘bread’, 1010248, 4);
-INSERT INTO ItemsPurchased VALUES(777294, ‘eggs’, 1010248, 2);
-INSERT INTO ItemsPurchased VALUES(777269, ‘NYStripSteak’, 1010248, 17);
+INSERT INTO ItemsPurchased VALUES(777141, 'rum', 1010773, 27);
+INSERT INTO ItemsPurchased VALUES(777294, 'eggs', 1010773, 2);
+INSERT INTO ItemsPurchased VALUES(777184, 'watermelon', 1010773, 6);
+INSERT INTO ItemsPurchased VALUES(777141, 'rum', 1010434, 27);
+INSERT INTO ItemsPurchased VALUES(777839, 'lime', 1010434, 2);
+INSERT INTO ItemsPurchased VALUES(777111, 'gingerale', 1010434, 8);
+INSERT INTO ItemsPurchased VALUES(777269, 'bread', 1010248, 4);
+INSERT INTO ItemsPurchased VALUES(777294, 'eggs', 1010248, 2);
+INSERT INTO ItemsPurchased VALUES(777269, 'NYStripSteak', 1010248, 17);
 ```
 
 From here we can now combine _JOIN_ and _VIEW_ to present different sets of information access. For example, suppose there is an application which tracks the purchase of eggs, so want to create a view that shows transactions where eggs were purchased. The information we need to create this view is in both the _Transactions_ and the _ItemsPurchased_ tables, so we will need to use inner join to determine each transaction where Eggs were purchased. To do this we would type:
