@@ -1,4 +1,6 @@
-# Solution 1
+# Solutions
+
+## Solution 1
 ```sql
 CREATE VIEW '1010434' AS
     SELECT itemName, price FROM ItemsPurchased as IP
@@ -7,7 +9,7 @@ CREATE VIEW '1010434' AS
     WHERE T.trackingID = 1010434;
 ```
 
-# Solution 2 
+## Solution 2 
 ```sql
 CREATE VIEW m_cera AS
     SELECT trackingID, purchase_date FROM Transactions as T
@@ -16,7 +18,7 @@ CREATE VIEW m_cera AS
         WHERE C.id = 2137;
 ```
 
-# Solution 3
+## Solution 3
 ```sql
 SELECT sum(price) FROM ItemsPurchased as IP
 INNER JOIN m_cera
